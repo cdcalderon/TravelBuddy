@@ -1,32 +1,39 @@
 using System;
-using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace TravelBuddy
 {
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
+	using Xamarin.Forms;
+	using Views;
 
-            MainPage = new MainPage();
-        }
+	public partial class App : Application
+	{
+		#region Constructors
+		public App()
+		{
+			InitializeComponent();
 
-        protected override void OnStart()
-        {
-            // Handle when your app starts
-        }
+			MainPage = new LoginPage();
+		}
+		#endregion
 
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
+		#region Methods
+		protected override void OnStart()
+		{
+			// Handle when your app starts
+		}
 
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
-        }
-    }
+		protected override void OnSleep()
+		{
+			// Handle when your app sleeps
+		}
+
+		protected override void OnResume()
+		{
+			// Handle when your app resumes
+		}
+		#endregion
+	}
 }

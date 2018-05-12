@@ -156,4 +156,7 @@
       <Name>TravelBuddy</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\globefull.png" />
+  </ItemGroup>
 </Project>
