@@ -1,13 +1,10 @@
-using System;
 using Xamarin.Forms.Xaml;
-
-
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace TravelBuddy
 {
 	using Xamarin.Forms;
 	using Views;
-
+    
 	public partial class App : Application
 	{
 		#region Constructors
