@@ -5,99 +5,102 @@
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Title="Login">
     <ContentPage.Content>
-        <StackLayout Padding="10,30">
-            <Label
-                FontAttributes="Bold"
-                FontSize="Large"
-                HorizontalOptions="Center"
-                Text="Travel Buddy"></Label>
-            <Image 
-                Source="globefull"
-                WidthRequest="230">
-            </Image>
-
-            <Grid Margin="0,20">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>
-
+        <ScrollView>
+            <StackLayout Padding="10,30">
                 <Label
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Text="E-Mail">
-                </Label>
-                <Entry
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    Keyboard="Email"
-                    Placeholder="Enter your Email...">
-                </Entry>
-                <Label
-                    Grid.Row="1"
-                    Grid.Column="0"
-                    Text="Password">
-                </Label>
-                <Entry
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    IsPassword="true"
-                    Placeholder="Enter your Password...">
-                </Entry>
-            </Grid>
-
-            <StackLayout Orientation="Horizontal">
-                <Label 
-                    VerticalOptions="Center"
-                    HorizontalOptions="StartAndExpand"
-                    Text="Remember me in this device">
-                </Label>
-                <Switch 
-                    HorizontalOptions="End">
-                </Switch>
-            </StackLayout>
-
-            <ActivityIndicator></ActivityIndicator>
-
-            <StackLayout 
-                Margin="50,0">
-                <Button
-                    BackgroundColor="Teal"
-                    BorderRadius="25"
-                    HeightRequest="50"
-                    TextColor="White"
                     FontAttributes="Bold"
-                    Text="Login">
-                </Button>
-                <Button
-                    BackgroundColor="Olive"
-                    BorderRadius="25"
-                    HeightRequest="50"
-                    TextColor="White"
-                    FontAttributes="Bold"
-                    Text="Register">
-                </Button>
-            </StackLayout>
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="Travel Buddy"></Label>
+                <Image 
+                    Source="globefull"
+                    WidthRequest="230">
+                </Image>
 
-            <StackLayout 
-                Margin="0,20"
-                Orientation="Horizontal"
-                HorizontalOptions="Center">
-                <Image 
-                    Source="facebook-logo"
-                    WidthRequest="80">
-                </Image>
-                <Image 
-                    Source="twitter-logo"
-                    WidthRequest="80">
-                </Image>
-                <Image 
-                    Source="instagram-logo"
-                    WidthRequest="80">
-                </Image>
-            </StackLayout>
+                <Grid Margin="0,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="E-Mail">
+                    </Label>
+                    <Entry
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Keyboard="Email"
+                        Placeholder="Enter your Email...">
+                    </Entry>
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Password">
+                    </Label>
+                    <Entry
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        IsPassword="true"
+                        Placeholder="Enter your Password...">
+                    </Entry>
+                </Grid>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label 
+                        VerticalOptions="Center"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Remember me in this device">
+                    </Label>
+                    <Switch 
+                        HorizontalOptions="End">
+                    </Switch>
+                </StackLayout>
+
+                <ActivityIndicator></ActivityIndicator>
+
+                <StackLayout 
+                    Margin="50,0">
+                    <Button
+                        BackgroundColor="Teal"
+                        BorderRadius="25"
+                        HeightRequest="50"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Text="Login">
+                    </Button>
+                    <Button
+                        BackgroundColor="Olive"
+                        BorderRadius="25"
+                        HeightRequest="50"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Text="Register">
+                    </Button>
+                </StackLayout>
+
+                <StackLayout 
+                    Margin="0,20"
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center">
+                    <Image 
+                        Source="facebook-logo"
+                        WidthRequest="80">
+                    </Image>
+                    <Image 
+                        Source="twitter-logo"
+                        WidthRequest="80">
+                    </Image>
+                    <Image 
+                        Source="instagram-logo"
+                        WidthRequest="80">
+                    </Image>
+                </StackLayout>
             
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
         
     </ContentPage.Content>
 </ContentPage>
