@@ -83,6 +83,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\drawable\globefull.png" />
+    <AndroidResource Include="Resources\drawable\twitter-logo.png" />
+    <AndroidResource Include="Resources\drawable\facebook-logo.png" />
+    <AndroidResource Include="Resources\drawable\instagram_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
