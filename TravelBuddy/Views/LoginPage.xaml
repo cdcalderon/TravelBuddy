@@ -86,7 +86,8 @@
                         FontAttributes="Bold"
                         Text="Login"
                         HorizontalOptions="FillAndExpand"
-                        Command="{Binding LoginCommand}">
+                        Command="{Binding LoginCommand}"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}">
                     </Button>
                     <Button
                         BackgroundColor="Olive"
@@ -95,7 +96,8 @@
                         TextColor="White"
                         FontAttributes="Bold"
                         Text="Register"
-                        HorizontalOptions="FillAndExpand">
+                        HorizontalOptions="FillAndExpand"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}">
                     </Button>
                 </StackLayout>
 

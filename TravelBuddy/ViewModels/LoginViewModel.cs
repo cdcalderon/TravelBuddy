@@ -1,33 +1,61 @@
 ﻿namespace TravelBuddy.ViewModels
 {
 	using System;
+	using System.ComponentModel;
 	using System.Windows.Input;
 	using GalaSoft.MvvmLight.Command;
 	using Xamarin.Forms;
-
-	public class LoginViewModel
+    
+	public class LoginViewModel : INotifyPropertyChanged
     { 
+		#region Events
+		public event PropertyChangedEventHandler PropertyChanged;
+		#endregion
+
+		private string email;
+		private string password;
+		private bool isRunning;
+		private bool isEnabled;
+
 		#region Properties
-        public string Email
+		public string Email
 		{
 			get;
 			set;
-	
+
 		}
 
 		public string Password
-        {
-            get;
-            set;
-        }
+		{
+			get
+			{
+				return this.password;
+			}
+			set
+			{
+				if(this.password != value)
+				{
+					this.password = value;
+					PropertyChanged?.Invoke(
+						this,
+						new PropertyChangedEventArgs(nameof(this.Password)));
+				}
+			}
+		}
 
 		public bool IsRunning
-        {
-            get;
-            set;
-        }
+		{
+			get;
+			set;
+		}
 
 		public bool IsRemembered
+		{
+			get;
+			set;
+		}
+
+		public bool IsEnabled
         {
             get;
             set;
@@ -42,6 +70,8 @@
 				return new RelayCommand(Login);
 			}
 		}
+
+
 
 		private async void Login()
 		{
@@ -84,6 +114,7 @@
 		public LoginViewModel()
 		{
 			this.IsRemembered = true;
+			this.IsEnabled = true;
 		}
 		#endregion
 	}
