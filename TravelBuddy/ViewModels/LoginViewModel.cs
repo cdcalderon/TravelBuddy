@@ -12,10 +12,10 @@
 		public event PropertyChangedEventHandler PropertyChanged;
 		#endregion
 
-		private string email;
+		//private string email;
 		private string password;
-		private bool isRunning;
-		private bool isEnabled;
+		//private bool isRunning;
+		//private bool isEnabled;
 
 		#region Properties
 		public string Email
